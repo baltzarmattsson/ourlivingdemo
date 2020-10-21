@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<script src="./node_modules/wisibel/build/wisibel.js"></script>
+		<script src="main.js"></script>
+		<meta charset="UTF-8">
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		>
+		<title>Wisibel NPM Module Demo</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="sideMenu">
+				<h1>Val</h1>
+
+				<!-- Fasad -->
+				<button
+					type="button"
+					onclick="onOptionButtonClicked('fasad', 'material', 'vit', 'Kulör fasad')"
+				>
+					Fasad - vit
+				</button>
+				<button
+					type="button"
+					onclick="onOptionButtonClicked('fasad', 'material', 'ljusgrön', 'Kulör fasad')"
+				>
+					Fasad - ljusgrön
+				</button>
+				<button
+					type="button"
+					onclick="onOptionButtonClicked('fasad', 'material', 'röd', 'Kulör fasad')"
+				>
+					Fasad - röd
+				</button>
+
+				<hr>
+
+				<!-- Tak -->
+				<button
+					type="button"
+					onclick="onOptionButtonClicked('tak', 'material', 'MP 401, svart', 'Tak-kulör')"
+				>
+					Tak - svart
+				</button>
+				<button
+					type="button"
+					onclick="onOptionButtonClicked('tak', 'material', 'MP 405, Tegelröd', 'Tak-kulör')"
+				>
+					Tak - tegelröd
+				</button>
+				<button
+					type="button"
+					onclick="onOptionButtonClicked('tak', 'material', 'MP 403, Röd', 'Tak-kulör')"
+				>
+					Tak - röd
+				</button>
+				<hr>
+
+				<!-- Ytterdörrar -->
+				<button
+					type="button"
+					onclick="onOptionButtonClicked('utvändiga dörrar', 'design', 'Linjalen', 'ytterdörrar')"
+				>
+					Ytterdörrstyp - Linjalen
+				</button>
+				<button
+					type="button"
+					onclick="onOptionButtonClicked('utvändiga dörrar', 'design', 'Lejonet 801g', 'ytterdörrar')"
+				>
+					Ytterdörrstyp - Lejonet
+				</button>
+
+				<hr>
+				<!-- Golv -->
+				<button
+					type="button"
+					onclick="onOptionButtonClicked('golv', 'material', 'PURE EK NATURE 3-STAV', 'Trägolv')"
+				>
+					Golv - ek
+				</button>
+				<button
+					type="button"
+					onclick="onOptionButtonClicked('golv', 'material', 'SHADE EK NATURE MILKY WHITE 3-STAV', 'Trägolv')"
+				>
+					Golv - ek nature white
+				</button>
+				<hr>
+
+				<!-- Köksö -->
+				<button
+					type="button"
+					onclick="onOptionButtonClicked('köksö', 'design', 'köksö', 'Köksö')"
+				>
+					Köksö - ja
+				</button>
+				<button
+					type="button"
+					onclick="onOptionButtonClicked('köksö', 'design', 'ingen köksö', 'Köksö')"
+				>
+					Köksö - nej
+				</button>
+
+			</div>
+			<div id="wisibel3dContainer">
+
+				<p id="loadingText">Loading...</p>
+			</div>
+		</div>
+	</body>
+</html>
