@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^17.0.0",
-    "wisibel": "^1.0.18"
+    "wisibel": "^1.0.19"
   }
 }

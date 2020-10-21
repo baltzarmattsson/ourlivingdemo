@@ -11,17 +11,19 @@ function initWisibelConfigurator() {
 		rendererElement: wisibel3dContainer,
 		cb: () => {
 			document.getElementById("loadingText").remove();
-			console.log("Wisibel loaded");
 		}
 	})
 }
 /**
  * 
  * @param {string} contextName  - Kategorin av val, såsom "fasad", "wc-kakel", "golv", "tvättmaskin"
+ * 
  * @param {string} changeType - Antingen "design" eller "material". 
  * 									Design = byte av 3D-modell (t.ex. en fasadmodell till en annan)
  * 									Material = byte av färger/texturer i en 3D-modell
+ * 
  * @param {string} choiceName - Namnet på valet, såsom "röd", "kakel 40x40", "hattprofil"
+ * 
  * @param {string} menuButtonName - Namnet på wisibel-knappen som i sin tur 
  * 									spelar upp en animation, laddar in/ur saker, byter kameravinkel
  */
